@@ -1,0 +1,21 @@
+{
+  "name": "ghl-lead-sync",
+  "version": "1.0.0",
+  "description": "GoHighLevel webhook to Google Sheets lead log with duplicate checks, retries and Slack error alerts.",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "demo": "tsx scripts/demo.ts",
+    "setup-sheet": "tsx --env-file=.env scripts/setup-sheet.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
